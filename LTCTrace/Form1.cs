@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace LTCTrace
 {
-    public partial class Form1 : Form
+    public partial class mainmenu : Form
     {
-        public Form1()
+        public mainmenu()
         {
             InitializeComponent();
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void xbtn_Click(object sender, EventArgs e)
+        {
+            exitBtn_Click(sender, e);
         }
     }
 }
