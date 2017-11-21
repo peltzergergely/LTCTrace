@@ -37,8 +37,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.titleLbl = new System.Windows.Forms.Label();
             this.xbtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.randomBtn = new System.Windows.Forms.Button();
             this.placeholderTextBox1 = new Demo.PlaceholderTextBox();
+            this.instLbl1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.placeholderTextBox2 = new Demo.PlaceholderTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -69,12 +72,15 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.placeholderTextBox2, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button1, 2, 10);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.exitBtn, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.placeholderTextBox1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.instLbl1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.randomBtn, 0, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -114,9 +120,9 @@
             this.instLbl.ForeColor = System.Drawing.SystemColors.ControlText;
             this.instLbl.Location = new System.Drawing.Point(251, 14);
             this.instLbl.Name = "instLbl";
-            this.instLbl.Size = new System.Drawing.Size(644, 39);
+            this.instLbl.Size = new System.Drawing.Size(475, 39);
             this.instLbl.TabIndex = 5;
-            this.instLbl.Text = "Válaszd ki az elvégzendő munkamenetet!";
+            this.instLbl.Text = "Töltsd ki a megfelelő mezőket!";
             // 
             // button1
             // 
@@ -128,10 +134,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(891, 611);
+            this.button1.Location = new System.Drawing.Point(891, 609);
             this.button1.Margin = new System.Windows.Forms.Padding(25);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 64);
+            this.button1.Size = new System.Drawing.Size(228, 66);
             this.button1.TabIndex = 1;
             this.button1.Text = "Mentés";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -156,9 +162,9 @@
             this.titleLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.titleLbl.Location = new System.Drawing.Point(3, 4);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(84, 25);
+            this.titleLbl.Size = new System.Drawing.Size(73, 25);
             this.titleLbl.TabIndex = 4;
-            this.titleLbl.Text = "Főmenü";
+            this.titleLbl.Text = "Ablak1";
             // 
             // xbtn
             // 
@@ -175,19 +181,19 @@
             this.xbtn.UseVisualStyleBackColor = true;
             this.xbtn.Click += new System.EventHandler(this.xbtn_Click);
             // 
-            // button2
+            // randomBtn
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.AutoSize = true;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(85, 167);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(293, 41);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Gomb";
-            this.button2.UseVisualStyleBackColor = false;
+            this.randomBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.randomBtn.AutoSize = true;
+            this.randomBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.randomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.randomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.randomBtn.Location = new System.Drawing.Point(3, 284);
+            this.randomBtn.Name = "randomBtn";
+            this.randomBtn.Size = new System.Drawing.Size(293, 41);
+            this.randomBtn.TabIndex = 4;
+            this.randomBtn.Text = "Gomb";
+            this.randomBtn.UseVisualStyleBackColor = false;
             // 
             // placeholderTextBox1
             // 
@@ -199,6 +205,41 @@
             this.placeholderTextBox1.PlaceholderText = "DataMatrix";
             this.placeholderTextBox1.Size = new System.Drawing.Size(381, 45);
             this.placeholderTextBox1.TabIndex = 5;
+            // 
+            // instLbl1
+            // 
+            this.instLbl1.AutoSize = true;
+            this.instLbl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.instLbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.instLbl1.Location = new System.Drawing.Point(3, 164);
+            this.instLbl1.Name = "instLbl1";
+            this.instLbl1.Size = new System.Drawing.Size(375, 45);
+            this.instLbl1.TabIndex = 6;
+            this.instLbl1.Text = "Scanneld be a Terméket!";
+            this.instLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 209);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(375, 59);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Scanneld be a Terméket!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // placeholderTextBox2
+            // 
+            this.placeholderTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.placeholderTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.placeholderTextBox2.Location = new System.Drawing.Point(381, 209);
+            this.placeholderTextBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.placeholderTextBox2.Name = "placeholderTextBox2";
+            this.placeholderTextBox2.PlaceholderText = "DataMatrix";
+            this.placeholderTextBox2.Size = new System.Drawing.Size(381, 45);
+            this.placeholderTextBox2.TabIndex = 8;
             // 
             // formSample
             // 
@@ -231,8 +272,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label titleLbl;
         private System.Windows.Forms.Label instLbl;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button randomBtn;
         private Demo.PlaceholderTextBox placeholderTextBox1;
+        private Demo.PlaceholderTextBox placeholderTextBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label instLbl1;
     }
 }
 
