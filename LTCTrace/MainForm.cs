@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LTCTrace
 {
-    public partial class mainmenu : Form
+    public partial class MainForm : Form
     {
-        public mainmenu()
+        public MainForm()
         {
             InitializeComponent();
         }

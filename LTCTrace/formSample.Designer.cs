@@ -1,6 +1,6 @@
 ﻿namespace LTCTrace
 {
-    partial class mainmenu
+    partial class formSample
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainmenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formSample));
             this.exitBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.instLbl = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.xbtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.titleLbl = new System.Windows.Forms.Label();
-            this.instLbl = new System.Windows.Forms.Label();
+            this.xbtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.placeholderTextBox1 = new Demo.PlaceholderTextBox();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // exitBtn
@@ -94,6 +94,30 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1144, 700);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.panel2, 3);
+            this.panel2.Controls.Add(this.instLbl);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 35);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1144, 80);
+            this.panel2.TabIndex = 3;
+            // 
+            // instLbl
+            // 
+            this.instLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.instLbl.AutoSize = true;
+            this.instLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.instLbl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.instLbl.Location = new System.Drawing.Point(251, 14);
+            this.instLbl.Name = "instLbl";
+            this.instLbl.Size = new System.Drawing.Size(644, 39);
+            this.instLbl.TabIndex = 5;
+            this.instLbl.Text = "Válaszd ki az elvégzendő munkamenetet!";
+            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -126,6 +150,16 @@
             this.panel1.Size = new System.Drawing.Size(1144, 35);
             this.panel1.TabIndex = 2;
             // 
+            // titleLbl
+            // 
+            this.titleLbl.AutoSize = true;
+            this.titleLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.titleLbl.Location = new System.Drawing.Point(3, 4);
+            this.titleLbl.Name = "titleLbl";
+            this.titleLbl.Size = new System.Drawing.Size(84, 25);
+            this.titleLbl.TabIndex = 4;
+            this.titleLbl.Text = "Főmenü";
+            // 
             // xbtn
             // 
             this.xbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -140,40 +174,6 @@
             this.xbtn.Text = "X";
             this.xbtn.UseVisualStyleBackColor = true;
             this.xbtn.Click += new System.EventHandler(this.xbtn_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(164)))), ((int)(((byte)(174)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.panel2, 3);
-            this.panel2.Controls.Add(this.instLbl);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 35);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1144, 80);
-            this.panel2.TabIndex = 3;
-            // 
-            // titleLbl
-            // 
-            this.titleLbl.AutoSize = true;
-            this.titleLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.titleLbl.Location = new System.Drawing.Point(3, 4);
-            this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(84, 25);
-            this.titleLbl.TabIndex = 4;
-            this.titleLbl.Text = "Főmenü";
-            // 
-            // instLbl
-            // 
-            this.instLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.instLbl.AutoSize = true;
-            this.instLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instLbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.instLbl.Location = new System.Drawing.Point(251, 14);
-            this.instLbl.Name = "instLbl";
-            this.instLbl.Size = new System.Drawing.Size(644, 39);
-            this.instLbl.TabIndex = 5;
-            this.instLbl.Text = "Válaszd ki az elvégzendő munkamenetet!";
             // 
             // button2
             // 
@@ -200,7 +200,7 @@
             this.placeholderTextBox1.Size = new System.Drawing.Size(381, 45);
             this.placeholderTextBox1.TabIndex = 5;
             // 
-            // mainmenu
+            // formSample
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -208,15 +208,15 @@
             this.ClientSize = new System.Drawing.Size(1144, 700);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "mainmenu";
+            this.Name = "formSample";
             this.Text = "Munkafolyamat választó";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
