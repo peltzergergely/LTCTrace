@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formSample));
             this.exitBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.outputMsgLbl = new System.Windows.Forms.Label();
             this.TextBox2 = new Demo.PlaceholderTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,7 +43,6 @@
             this.TextBox1 = new Demo.PlaceholderTextBox();
             this.instLbl1 = new System.Windows.Forms.Label();
             this.randomBtn = new System.Windows.Forms.Button();
-            this.outputMsgLbl = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -102,6 +102,18 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1144, 700);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // outputMsgLbl
+            // 
+            this.outputMsgLbl.AutoSize = true;
+            this.outputMsgLbl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.outputMsgLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputMsgLbl.Location = new System.Drawing.Point(384, 418);
+            this.outputMsgLbl.Name = "outputMsgLbl";
+            this.outputMsgLbl.Size = new System.Drawing.Size(375, 83);
+            this.outputMsgLbl.TabIndex = 9;
+            this.outputMsgLbl.Text = "Kimeneti Info";
+            this.outputMsgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TextBox2
             // 
@@ -246,23 +258,11 @@
             this.randomBtn.Text = "Gomb";
             this.randomBtn.UseVisualStyleBackColor = false;
             // 
-            // outputMsgLbl
-            // 
-            this.outputMsgLbl.AutoSize = true;
-            this.outputMsgLbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.outputMsgLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputMsgLbl.Location = new System.Drawing.Point(384, 418);
-            this.outputMsgLbl.Name = "outputMsgLbl";
-            this.outputMsgLbl.Size = new System.Drawing.Size(375, 83);
-            this.outputMsgLbl.TabIndex = 9;
-            this.outputMsgLbl.Text = "Kimeneti Info";
-            this.outputMsgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // formSample
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1144, 700);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
