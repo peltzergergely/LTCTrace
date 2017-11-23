@@ -29,7 +29,7 @@ namespace LTCTrace
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var frm = new formSample(this);
+            var frm = new GatewayTHT(this);
             frm.Show();
         }
 
@@ -54,6 +54,12 @@ namespace LTCTrace
         //    {
         //        e.Cancel = true;
         //    };
+        }
+
+        private void dbBtn_Click(object sender, EventArgs e)
+        {
+            var frm = new db_table_view(this);
+            frm.Show();
         }
     }
 }

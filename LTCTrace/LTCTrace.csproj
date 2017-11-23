@@ -52,11 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="formSample.cs">
+    <Compile Include="db_table_view.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formSample.Designer.cs">
-      <DependentUpon>formSample.cs</DependentUpon>
+    <Compile Include="db_table_view.Designer.cs">
+      <DependentUpon>db_table_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GatewayTHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatewayTHT.Designer.cs">
+      <DependentUpon>GatewayTHT.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -69,8 +75,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="formSample.resx">
-      <DependentUpon>formSample.cs</DependentUpon>
+    <EmbeddedResource Include="db_table_view.resx">
+      <DependentUpon>db_table_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatewayTHT.resx">
+      <DependentUpon>GatewayTHT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

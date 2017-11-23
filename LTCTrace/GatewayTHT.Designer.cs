@@ -1,6 +1,6 @@
 ﻿namespace LTCTrace
 {
-    partial class formSample
+    partial class GatewayTHT
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formSample));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GatewayTHT));
             this.exitBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.outputMsgLbl = new System.Windows.Forms.Label();
-            this.TextBox2 = new Demo.PlaceholderTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.instLbl = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,7 +40,8 @@
             this.xbtn = new System.Windows.Forms.Button();
             this.TextBox1 = new Demo.PlaceholderTextBox();
             this.instLbl1 = new System.Windows.Forms.Label();
-            this.randomBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.placeholderTextBox1 = new Demo.PlaceholderTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -70,20 +69,20 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(240)))));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.outputMsgLbl, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.TextBox2, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.outputMsgLbl, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button1, 2, 10);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.exitBtn, 0, 10);
             this.tableLayoutPanel1.Controls.Add(this.TextBox1, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.instLbl1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.randomBtn, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.placeholderTextBox1, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -108,35 +107,13 @@
             this.outputMsgLbl.AutoSize = true;
             this.outputMsgLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.outputMsgLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputMsgLbl.Location = new System.Drawing.Point(384, 418);
+            this.outputMsgLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.outputMsgLbl.Location = new System.Drawing.Point(384, 501);
             this.outputMsgLbl.Name = "outputMsgLbl";
-            this.outputMsgLbl.Size = new System.Drawing.Size(375, 83);
+            this.outputMsgLbl.Size = new System.Drawing.Size(375, 47);
             this.outputMsgLbl.TabIndex = 9;
             this.outputMsgLbl.Text = "Kimeneti Info";
             this.outputMsgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TextBox2
-            // 
-            this.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox2.Location = new System.Drawing.Point(381, 209);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.PlaceholderText = "DataMatrix";
-            this.TextBox2.Size = new System.Drawing.Size(381, 45);
-            this.TextBox2.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 209);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(375, 59);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Scanneld be a Terméket!";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel2
             // 
@@ -152,24 +129,26 @@
             // 
             // instLbl
             // 
-            this.instLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.instLbl.AutoSize = true;
+            this.instLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.instLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instLbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.instLbl.Location = new System.Drawing.Point(251, 14);
+            this.instLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.instLbl.Location = new System.Drawing.Point(0, 0);
             this.instLbl.Name = "instLbl";
-            this.instLbl.Size = new System.Drawing.Size(475, 39);
+            this.instLbl.Size = new System.Drawing.Size(1144, 80);
             this.instLbl.TabIndex = 5;
-            this.instLbl.Text = "Töltsd ki a megfelelő mezőket!";
+            this.instLbl.Text = "Szkenneld be a gateway vonalkódját és amennyiben szükség van reworkra akkor adj e" +
+    "gy rövid leírást a hiba okáról!";
+            this.instLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(234)))));
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(891, 609);
@@ -183,7 +162,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(117)))), ((int)(((byte)(127)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(104)))), ((int)(((byte)(122)))));
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 3);
             this.panel1.Controls.Add(this.titleLbl);
             this.panel1.Controls.Add(this.xbtn);
@@ -196,28 +175,30 @@
             // 
             // titleLbl
             // 
-            this.titleLbl.AutoSize = true;
-            this.titleLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.titleLbl.Location = new System.Drawing.Point(3, 4);
+            this.titleLbl.Dock = System.Windows.Forms.DockStyle.Left;
+            this.titleLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(240)))));
+            this.titleLbl.Location = new System.Drawing.Point(0, 0);
             this.titleLbl.Name = "titleLbl";
-            this.titleLbl.Size = new System.Drawing.Size(73, 25);
+            this.titleLbl.Size = new System.Drawing.Size(134, 35);
             this.titleLbl.TabIndex = 4;
-            this.titleLbl.Text = "Ablak1";
+            this.titleLbl.Text = "Gateway THT";
+            this.titleLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // xbtn
             // 
-            this.xbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.xbtn.AutoSize = true;
+            this.xbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(205)))), ((int)(((byte)(210)))));
+            this.xbtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.xbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xbtn.Location = new System.Drawing.Point(1113, 2);
+            this.xbtn.Location = new System.Drawing.Point(1115, 0);
             this.xbtn.Margin = new System.Windows.Forms.Padding(2);
             this.xbtn.Name = "xbtn";
-            this.xbtn.Size = new System.Drawing.Size(29, 29);
+            this.xbtn.Size = new System.Drawing.Size(29, 35);
             this.xbtn.TabIndex = 3;
             this.xbtn.TabStop = false;
             this.xbtn.Text = "X";
-            this.xbtn.UseVisualStyleBackColor = true;
+            this.xbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.xbtn.UseVisualStyleBackColor = false;
             this.xbtn.Click += new System.EventHandler(this.xbtn_Click);
             // 
             // TextBox1
@@ -237,28 +218,38 @@
             this.instLbl1.AutoSize = true;
             this.instLbl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.instLbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.instLbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.instLbl1.Location = new System.Drawing.Point(3, 164);
             this.instLbl1.Name = "instLbl1";
             this.instLbl1.Size = new System.Drawing.Size(375, 45);
             this.instLbl1.TabIndex = 6;
-            this.instLbl1.Text = "Scanneld be a Terméket!";
+            this.instLbl1.Text = "Gateway Vonalkód:";
             this.instLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // randomBtn
+            // label1
             // 
-            this.randomBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.randomBtn.AutoSize = true;
-            this.randomBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
-            this.randomBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.randomBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.randomBtn.Location = new System.Drawing.Point(3, 284);
-            this.randomBtn.Name = "randomBtn";
-            this.randomBtn.Size = new System.Drawing.Size(293, 41);
-            this.randomBtn.TabIndex = 3;
-            this.randomBtn.Text = "Gomb";
-            this.randomBtn.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.label1.Location = new System.Drawing.Point(3, 268);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(375, 74);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Javításra szoruló részek:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // formSample
+            // placeholderTextBox1
+            // 
+            this.placeholderTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.placeholderTextBox1.Location = new System.Drawing.Point(384, 271);
+            this.placeholderTextBox1.Multiline = true;
+            this.placeholderTextBox1.Name = "placeholderTextBox1";
+            this.tableLayoutPanel1.SetRowSpan(this.placeholderTextBox1, 2);
+            this.placeholderTextBox1.Size = new System.Drawing.Size(375, 144);
+            this.placeholderTextBox1.TabIndex = 11;
+            // 
+            // GatewayTHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -266,15 +257,13 @@
             this.ClientSize = new System.Drawing.Size(1144, 700);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "formSample";
+            this.Name = "GatewayTHT";
             this.Text = "Munkafolyamat választó";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -289,12 +278,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label titleLbl;
         private System.Windows.Forms.Label instLbl;
-        private System.Windows.Forms.Button randomBtn;
         private Demo.PlaceholderTextBox TextBox1;
-        private Demo.PlaceholderTextBox TextBox2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label instLbl1;
         private System.Windows.Forms.Label outputMsgLbl;
+        private System.Windows.Forms.Label label1;
+        private Demo.PlaceholderTextBox placeholderTextBox1;
     }
 }
 

@@ -12,11 +12,11 @@ using Npgsql;
 
 namespace LTCTrace
 {
-    public partial class formSample : Form
+    public partial class GatewayTHT : Form
     {
         Form opener;
 
-        public formSample(Form parentForm) //form opener
+        public GatewayTHT(Form parentForm) //form opener
         {
             InitializeComponent();
             opener = parentForm;
@@ -67,7 +67,7 @@ namespace LTCTrace
 
         private bool dataValid() //checks if txtbx values are legit
         {
-            if (TextBox1.TextLength > 1 && TextBox2.TextLength > 1)
+            if (TextBox1.TextLength > 1 )
                 return true;
             else
                 return false;
